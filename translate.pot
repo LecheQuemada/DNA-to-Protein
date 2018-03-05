@@ -61,6 +61,6 @@ msgstr ""
 
 #: Genes_v1.0.0.py:148
 msgid ""
-"La proteína es: {} \n"
+"La proteína es: {}{} \n"
 msgstr ""
 

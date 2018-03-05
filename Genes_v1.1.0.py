@@ -1,8 +1,9 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
 #Paso 0. Dependencias y variables:
 import re
+import sys
 import gettext
 import locale
 
@@ -10,13 +11,21 @@ lugar = locale.getdefaultlocale()
 
 continuar = True
 liGEN=[]
+does_ends=""
 
 en = gettext.translation('translate', localedir='locale', languages=['en'])
 
-if not "es" in lugar[0]:
-	en.install()
+
+if len(sys.argv) > 1:
+	if sys.argv[1] == "es":
+		_ = lambda s: s
+	if sys.argv[1] == "en":
+		en.install()
 else:
-	_ = lambda s: s
+	if "es" in lugar[0]:
+		_ = lambda s: s
+	else:
+		en.install()
 
 #Paso 1. Input de la cadena:
 cadena0 = input(_("Escribe la cadena a transcribir:  "))
@@ -40,6 +49,7 @@ def transcripcion( gen,tipo ):
 	global cadenat
 	global continuar
 	global liGEN
+	global does_ends
 
 
 	#Crear cadena molde
@@ -76,7 +86,6 @@ def transcripcion( gen,tipo ):
 			#Imprimir gen dividido
 			print(_("Se encontró el gen {} {} {} {} {}").format(preINI, sinicio[0], ' '.join(liGEN), salto_s[0], cadena0))
 			liGEN.append(salto_s[0])
-			does_ends = ""
 
 
 		else:
@@ -103,7 +112,7 @@ def transcripcion( gen,tipo ):
 
 		if sinicio[0] in cadena0:
 			continuar = True
-			cadenat = "m"
+			cadenat = "t"
 		else:
 			continuar = False
 
@@ -150,16 +159,18 @@ def traduccion( arn ):
 
 	protein = ""
 
-	for amino,amicop in zip(aminoacids, aminocopy):
-		for value in amino:
-			for triplete in arn:
-				if value == triplete:
-					if amicop == "STP":
-						protein = protein.rstrip(" - ")
-						print(_("La proteína es: {} \n").format(protein))
-						return
-					else:
-						protein += amicop + " - "
+	for triplete in arn:
+		for amino in aminoacids:
+			for value in amino:
+					if value == triplete:
+						theindex = aminoacids.index(amino)
+						amcopy = aminocopy[theindex]
+						protein += amcopy + " - "
+
+
+	protein = protein.rstrip("- STP")
+	print(_("La proteína es: {}{} \n").format(protein, does_ends))
+	return
 
 
 					
