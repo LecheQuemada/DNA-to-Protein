@@ -6,7 +6,8 @@ $ ./dnatoprotein.py #For the text interface
 $ ./gui.py #For the graphical interface
 ```
   
-As long as python3 is used to execute it, it will run properly, thus a GUI will work just as well. 
+As long as python3 is used to execute it, it will run properly (I hope).
+It is worth knowing that the file should be executed at the same folder (not at any other level), for the translation to work.
 English and Spanish translations based on the locale of the system, or selected by passing an argument at execution:
 
 ```shell
