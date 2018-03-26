@@ -13,7 +13,7 @@ Traducción al Inglés y Español basado en el locale del sistema, o pasando un 
 $ ./dnatoprotein.py [es/en]
 $ ./gui.py [es/en]
 ```
-Pueden haber errores de traducción.
+Pueden haber errores de traducción. El archivo se deberá ejecutar desde el folder que lo contiene.
 
 To read this in [English, click here.](README.md)
 Para leer esto en [Inglés, click aquí](README.md)
