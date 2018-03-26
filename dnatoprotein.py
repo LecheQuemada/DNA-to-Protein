@@ -9,19 +9,24 @@ import locale
 
 lugar = locale.getdefaultlocale()
 
-en = gettext.translation('en', localedir='locale', languages=['en'])
+try:
+    en = gettext.translation('en', localedir='locale', languages=['en'])
+    if len(sys.argv) > 1:
+       if sys.argv[1] == "es":
+           _ = lambda s: s
+       if sys.argv[1] == "en":
+           en.install()
+    else:
+       if "es" in lugar[0]:
+           _ = lambda s: s
+       else:
+           en.install()
+
+except FileNotFoundError as FNF:
+    _ = lambda s: s
 
 
-if len(sys.argv) > 1:
-   if sys.argv[1] == "es":
-       _ = lambda s: s
-   if sys.argv[1] == "en":
-       en.install()
-else:
-   if "es" in lugar[0]:
-       _ = lambda s: s
-   else:
-       en.install()
+
 
 def main():
     #Paso 1. Input de la cadena:
