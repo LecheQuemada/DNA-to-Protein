@@ -1,0 +1,41 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2018-03-25 21:09-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+
+
+#: dnatoprotein.py:30
+msgid "Escriba la cadena de ADN a convertir:  "
+msgstr ""
+
+#: dnatoprotein.py:31
+msgid "¿La cadena es molde [escriba 't'] (3'5) o complementaria [escriba 'n'] (5'3)?  "
+msgstr ""
+
+#: dnatoprotein.py:32
+msgid "Escriba los intrones ARN o ADN a usar separados por un espacio (e.g. TCA AAC CGC GAT):  "
+msgstr ""
+
+#: dnatoprotein.py:33
+msgid "¿Intrones tipo ARN [escriba 'R'] o ADN [escriba 'D']? (ARN por defecto) "
+msgstr ""
+
+#: dnatoprotein.py:64
+msgid "Conversión completa"
+msgstr ""
+
+#: dnatoprotein.py:144
+msgid "La cadena proporcionada no contiene un gen."
+msgstr ""
+

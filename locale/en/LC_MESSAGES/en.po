@@ -1,0 +1,53 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2018-03-25 21:09-0600\n"
+"PO-Revision-Date: 2018-03-25 21:18-0600\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"X-Generator: Poedit 2.0.6\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: en\n"
+
+#: dnatoprotein.py:30
+msgid "Escriba la cadena de ADN a convertir:  "
+msgstr "Write the DNA chain to be transcribed: "
+
+#: dnatoprotein.py:31
+msgid ""
+"¿La cadena es molde [escriba 't'] (3'5) o complementaria [escriba 'n'] "
+"(5'3)?  "
+msgstr ""
+"What type of chain is it? For template (3'5, anti-sense, non-coding) write "
+"'t', for non-template (5'3, sense, coding) write 'n': "
+
+#: dnatoprotein.py:32
+msgid ""
+"Escriba los intrones ARN o ADN a usar separados por un espacio (e.g. TCA AAC "
+"CGC GAT):  "
+msgstr ""
+"Introduce the introns in RNA or DNA format separated by a space (e.g. TCA "
+"AAC CGC GAT):  "
+
+#: dnatoprotein.py:33
+msgid ""
+"¿Intrones tipo ARN [escriba 'R'] o ADN [escriba 'D']? (ARN por defecto) "
+msgstr ""
+"What type of introns are they? For RNA write 'R', for DNA write 'D'. RNA is "
+"used by default: "
+
+#: dnatoprotein.py:64
+msgid "Conversión completa"
+msgstr "Conversion terminated"
+
+#: dnatoprotein.py:144
+msgid "La cadena proporcionada no contiene un gen."
+msgstr "The given chain does not contain a gene."
