@@ -79,7 +79,7 @@ class ADNaProteina(Gtk.Window):
         #Declaramos 2nda entrada, con placeholder y hints
         entry2 = Gtk.Entry()
         entry2.set_placeholder_text(_("Ingrese los intrones separados por un espacio"))
-        entry1.set_input_hints(hint)
+        entry2.set_input_hints(hint)
         #Creamos segundo combo, añadimos opciones
         intron_combo = Gtk.ComboBoxText()
         for acid in acids:
@@ -154,7 +154,7 @@ class ADNaProteina(Gtk.Window):
 
 
         except ValueError as ve:
-            label.set_text(_(""))
+            label.set_text(_("A"))
 
      
 
