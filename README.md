@@ -5,6 +5,8 @@ Simple Python script to aid the user at transcribing and translating an DNA chai
 $ ./dnatoprotein.py #For the text interface
 $ ./gui.py #For the graphical interface
 ```
+
+![Interface Image](https://github.com/jacobszpz/DNA-to-Protein/raw/master/images/en_gui.png)
   
 As long as python3 is used to execute it, it will run properly (I hope).
 It is worth knowing that the file should be executed at the same folder (not at any other level), for the translation to work.

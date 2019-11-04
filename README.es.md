@@ -5,6 +5,8 @@ Programa en Python para ayudar al usuario en la transcripción y traducción de 
 $ ./dnatoprotein.py #Para el programa en terminal
 $ ./gui.py #Para la interfaz gráfica
 ```
+
+![Interface Image](https://github.com/jacobszpz/DNA-to-Protein/raw/master/images/es_gui.png)
   
 Siempre que Python 3 se use para ejecutarlo (Y no existan bugs), correrá sin problemas. 
 Traducción al Inglés y Español basado en el locale del sistema, o pasando un argumento de lenguaje:
